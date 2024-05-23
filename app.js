@@ -37,6 +37,10 @@ app.use(cors());
 app.use(compression()); // Compress response bodies
 app.use(helmet()); // Secure your app by setting various HTTP headers
 
+if (process.env.NODE_ENV != "production") {
+    require('dotenv').config({ path: 'server/.env' });
+}
+
 // routes middleware
 app.use('/api', authRoutes);
 app.use('/api', userRoutes);
