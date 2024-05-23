@@ -1,0 +1,8 @@
+[build]
+  functions = "functions"
+  command = "npm run build"  # Adjust this command according to your build process
+
+[build.environment]
+  DATABASE = "mongodb+srv://khawajamoosa81:Pak03216156891@backend.xhmd22x.mongodb.net/?retryWrites=true&w=majority"
+  PORT=8080
+  JWT_SECRET=fdlhihwli5y43054y738y4308toyhwreiohre8o95y493
